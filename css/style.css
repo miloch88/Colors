@@ -30,6 +30,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: white;
+    transition: 0.5s;
 }
 
 .red.circle {
