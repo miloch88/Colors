@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bg {
+    background-color: #ddd;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.bg p{
+    position: absolute;
+    line-height: 100vh;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.red.circle {
+    background-color: red;
+    top: 5%;
+    left: 5%;
+}
+
+.green.circle {
+    background-color: green;
+    top: 5%;
+    right: 5%;
+}
+
+.blue.circle {
+    background-color: blue;
+    bottom: 5%;
+    left: 5%;
+}
+
+.orange.circle {
+    background-color: orange;
+    bottom: 5%;
+    right: 5%;
+}
+
+.red.circle:hover ~ .bg{
+    background-color: red;
+}
+
+.red.circle:hover ~ .bg p.red{
+    opacity: 1;
+}
+
+.green.circle:hover ~ .bg{
+    background-color: green;
+}
+
+.green.circle:hover ~ .bg p.green{
+    opacity: 1;
+}
+
+.blue.circle:hover ~ .bg{
+    background-color: blue;
+}
+
+.blue.circle:hover ~ .bg p.blue{
+    opacity: 1;
+}
+
+.orange.circle:hover ~ .bg{
+    background-color: orange;
+}
+
+.orange.circle:hover ~ .bg p.orange{
+    opacity: 1;
+}
